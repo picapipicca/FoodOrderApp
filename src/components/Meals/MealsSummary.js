@@ -1,9 +1,9 @@
 import React from 'react';
-import classes from "./MealsSummary.mocule.css";
+import classes from "./MealsSummary.module.css";
 
 const MealsSummary = () => {
     return (
-        <section>
+        <section className={classes.summary}>
             <h2>오늘 먹고싶은 음식은?</h2>
             <p>
                먹고싶은 음식을 골라보세요! 한식,양식,중식,일식,분식까지 없는게 없는 캥거루 식당에서 오늘 점심이나 저녁을 해결해보는거 어떄요?
