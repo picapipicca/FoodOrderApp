@@ -1,7 +1,8 @@
 import classes from './CartItem.module.css';
 
 const CartItem = (props) => {
-  const price = `$${props.price.toFixed(2)}`;
+  //const price = `$${props.price.toFixed(2)}`; 소수점 둘째자리까지 보이게 함
+  const price = `${props.price}원`;
 
   return (
     <li className={classes['cart-item']}>
