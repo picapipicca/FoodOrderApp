@@ -14,8 +14,10 @@ const HeaderCartButton = (props) => {
     const numberOfCartItems = items.reduce((curNum,item) => {
         return curNum + item.amount
     }, 0 );
-
+    
+    // const btnClasses = `${classes.button} ${classes.bump}`;
     const btnClasses = `${classes.button} ${btnHighlighted ? classes.bump : ''}`;
+    
 
     useEffect(()=>{
         if (items.length === 0){
